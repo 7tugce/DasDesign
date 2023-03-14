@@ -1,0 +1,64 @@
+
+.logo {
+  height: 150px;
+  width: 150px;
+}
+.navbar {
+  align-items: flex-start;
+  background-color: #d0b8a8;
+  border-bottom-left-radius: 15%;
+  border-top-right-radius: 100%;
+  max-width: 10rem;
+}
+.example-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: 2%;
+  width: 60%;
+  float: right;
+  margin-top: 2%;
+}
+.example-photo-two{
+  display: block;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 60%;
+  float: left;
+  margin-top: 2%;
+}
+.description-one{
+  size: 0.2rem;
+   margin-top: 3%;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+h1{
+    font-size: larger;
+}
+.description-one-title{
+    font-style: italic;
+    margin-top: 3%;
+    margin-left: 9rem;
+    margin-right: 10rem;
+}
+.btn {
+  background: #ebeef0;
+  background-image: -webkit-linear-gradient(top, #ebeef0, #9fa4a6);
+  background-image: -moz-linear-gradient(top, #ebeef0, #9fa4a6);
+  background-image: -ms-linear-gradient(top, #ebeef0, #9fa4a6);
+  background-image: -o-linear-gradient(top, #ebeef0, #9fa4a6);
+  background-image: linear-gradient(to bottom, #ebeef0, #9fa4a6);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #807869;
+  text-decoration: none;
+}
