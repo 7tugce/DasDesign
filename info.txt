@@ -1,5 +1,5 @@
 dasinterior.com.tr web sitesi şifre = ser83hanbir58sen kullanıcı adı= Serhan
-
+Udemy kullanıcı adı vianovayapi@gmail.com şifre = u101demi123
 
 LOGO 
 
@@ -24,6 +24,11 @@ Hakkımızda =
  Pastek bohem tonlar seviliyor.
  Sade ve şık.
  Alan güzel değerlendirilmeli.
+
+
+ bg repeat 
+
+ animasyon eklenecek
 
 
 

@@ -1,15 +1,31 @@
+body {
+  text-align: center;
+}
+
+
+/* NAVBAR */
+
 
 .logo {
-  height: 150px;
+  height: 200px;
   width: 150px;
 }
 .navbar {
-  align-items: flex-start;
   background-color: #d0b8a8;
   border-bottom-left-radius: 15%;
   border-top-right-radius: 100%;
-  max-width: 10rem;
+  border-bottom-left-radius: 100%;
+  align-items: flex-end;
 }
+
+/* CONTENT */
+
+.card{
+  display: flex;
+  padding: 20px;
+  text-align: center;
+}
+
 .example-photo {
   display: block;
   margin-left: auto;
@@ -41,24 +57,39 @@ h1{
     margin-left: 9rem;
     margin-right: 10rem;
 }
+
 .btn {
-  background: #ebeef0;
-  background-image: -webkit-linear-gradient(top, #ebeef0, #9fa4a6);
-  background-image: -moz-linear-gradient(top, #ebeef0, #9fa4a6);
-  background-image: -ms-linear-gradient(top, #ebeef0, #9fa4a6);
-  background-image: -o-linear-gradient(top, #ebeef0, #9fa4a6);
-  background-image: linear-gradient(to bottom, #ebeef0, #9fa4a6);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
+  -webkit-border-radius: 57;
+  -moz-border-radius: 57;
+  border-radius: 57px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 23px;
+  font-size: 17px;
+  background: #c9c6c1;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  size: 40px;
 }
 
 .btn:hover {
-  background: #807869;
+  background: #d2abde;
   text-decoration: none;
+}
+              
+a{
+  float: inline-end;
+}
+a:hover{
+  color: black;
+}
+
+/* FOOTER */
+
+
+.footer{
+  text-align: center;
+  align-content: center;
+  background-color: #d0b8a8;
+  padding: 7px 15px;
+  color: white;
 }
