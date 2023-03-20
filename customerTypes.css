@@ -28,11 +28,11 @@
 
 /* NAVBAR */
 
-  .navbar {
-    align-items: flex-end;
-    background-color: transparent; /* #d0b8a8; */
-    min-height: fit-content;
-  }
+.navbar {
+  align-items: flex-end;
+  background-color: transparent; /* #d0b8a8; */
+  min-height: fit-content;
+}
   
   .btn {
     -webkit-border-radius: 57;

@@ -1,21 +1,16 @@
 body {
   text-align: center;
+  align-content: center;
 }
 
 
 /* NAVBAR */
 
 
-.logo {
-  height: 200px;
-  width: 150px;
-}
 .navbar {
-  background-color: #d0b8a8;
-  border-bottom-left-radius: 15%;
-  border-top-right-radius: 100%;
-  border-bottom-left-radius: 100%;
   align-items: flex-end;
+  background-color: transparent; /* #d0b8a8; */
+  
 }
 
 /* CONTENT */
@@ -24,6 +19,9 @@ body {
   display: flex;
   padding: 20px;
   text-align: center;
+}
+.card .col:hover{
+  transform: translateY(-20px)
 }
 
 .example-photo {
@@ -58,7 +56,7 @@ h1{
     margin-right: 10rem;
 }
 
-.btn {
+.navbar .btn {
   -webkit-border-radius: 57;
   -moz-border-radius: 57;
   border-radius: 57px;
@@ -71,8 +69,8 @@ h1{
   size: 40px;
 }
 
-.btn:hover {
-  background: #d2abde;
+.navbar .btn:hover {
+  background: #B2B2B2;
   text-decoration: none;
 }
               
