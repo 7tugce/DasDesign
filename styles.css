@@ -19,12 +19,16 @@ font-family: 'Raleway', sans-serif;
 .logo {
   height: 150px;
   width: 150px;
+  margin-bottom: 20px;
 }
 
 .navbar {
-  background-color: transparent; /* #d0b8a8; */
+  background: transparent; /* #d0b8a8; */
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
+}
+.container-fluid{
+  background: transparent
 }
 
 
