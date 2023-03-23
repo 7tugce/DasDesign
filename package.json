@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.0-alpha1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
   }
 }
