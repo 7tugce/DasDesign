@@ -20,11 +20,6 @@ Hakkımızda =
  Başlıklar halinde olabilir.
  Filtreleme yapılacak.
 
- 
- Pastek bohem tonlar seviliyor.
- Sade ve şık.
- Alan güzel değerlendirilmeli.
-
 
  bg repeat 
 
@@ -35,9 +30,27 @@ Hakkımızda =
 
 
  og kısmı
+
+ serverı kontrol et
+
+ form 
+ telefona gönderilmesi
+
+ yazıdaki maili link yap
+
+ form submit edildikten sonra temizlensin
  
+formda ilk harfleri büyük yap,
+
+telefonu sticky yap
 
 
+müşteri tiplerinde açılan sayfada diğer seçenekler de görünsün
+
+menü toggler yandan açılsın
+
+
+n9c!ZGg!kLF1
 
 
 

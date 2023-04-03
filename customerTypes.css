@@ -1,110 +1,106 @@
 /* NAVBAR */
 
 .logo {
-  height: 150px;
-  width: 150px;
+
   margin-bottom: 20px;
 }
 
-.navbar {
-  background: transparent; /* #d0b8a8; */
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+nav{
+
+font-size: 10px;
+font-family: 'Dosis', sans-serif;
+border-bottom-style: solid;
+border-width: 1px;
+
 }
 .container-fluid{
   background: transparent
 }
-
-
-.btn {
-  -webkit-border-radius: 57;
-  -moz-border-radius: 57;
-  border-radius: 57px;
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
+.nav-item{
   font-size: 17px;
-  background: #c9c6c1;
-  padding: 10px 20px 10px 20px;
+font-family: 'Dosis', sans-serif;
+justify-content: flex-start;
+}
+
+a{
   text-decoration: none;
-}
-
-.btn:hover {
-  background: #d2abde;
-  text-decoration: none;
-}
-.hide {
-  display: none;
+  color:gray;
 }
 
 
-div.gallery {
-  border: 1px solid #ccc;
-}
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
 
-div.gallery img {
+
+
+/* CONTACT BUTTON */
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  background-color: #3C3C3C; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 4%;
+  font-family: 'Dosis', sans-serif;
+}
+.btn-three {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative;
+  height: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.3s;
 }
-
-div.desc {
-  padding: 15px;
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.5);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+/* FORM */
+form{
+ width: 250px;
+  margin: auto;
   text-align: center;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
 /* FOOTER */
 
-footer {
-  justify-content: center;
-  background-color: #a98167;
+
+.footer{
+  text-align: center;
+  align-content: center;
+  background-color: #d0b8a8;
   padding: 7px 15px;
-  font-family: "Nova Mono", monospace;
-}
-footer p {
   color: white;
-  position: relative;
-  margin-bottom: 2%;
-  justify-self: center;
-}
-.social {
-  color: white;
-}
-.fa-brands {
-  color: white;
-  margin: auto;
-  padding: 1%;
-  flex-direction: column;
 }

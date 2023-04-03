@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DAS Design | İletişim</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/001-das-logo.favicon.ico"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.6.4.js"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/logo.png"
+          alt="DAS Design logo"
+          width="80"
+          height="75"
+          style="margin-left: 30px"
+        />
+      </a>
+    </nav>
+
+    <h4>Bize nasıl ulaşabilirsiniz</h4>
+
+    <form
+      id="form"
+      action="mailto:tugceozelmaci1@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <div class="mb-3">
+        <label class="input-group-text" id="name" id="inputGroup-sizing-default"
+          >İsim Soyisim</label
+        >
+        <input
+          type="text"
+          id="nameInput"
+          name="name"
+          class="form-control"
+          required
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          onkeypress="return validate(event)"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="input-group-text"
+          >Telefonunuz</label
+        >
+        <input
+          type="tel"
+          class="form-control"
+          name="phone"
+          required
+          id="phone"
+          placeholder=""
+          onkeypress="return validate(event)"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="input-group-text"
+          >Email</label
+        >
+        <input
+          type="email"
+          name="mail"
+          class="form-control"
+          required
+          id="mail"
+          placeholder="birisi@örnek.com"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Eklemek İstedikleriniz</label
+        >
+        <textarea
+          class="form-control"
+          id="textArea"
+          rows="3"
+          onkeypress="return validate(event)"
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="btn"
+        id="submit"
+        value="Send"
+      >
+        Gönder
+      </button>
+    </form>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1729.1237096751902!2d27.271909613187322!3d37.36081004916579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be8733dbf3a7cf%3A0x26de958f7a2d133!2sFidan%20Fashion!5e0!3m2!1str!2str!4v1679993005965!5m2!1str!2str"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
