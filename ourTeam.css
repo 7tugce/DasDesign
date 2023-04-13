@@ -26,13 +26,38 @@ div.align-middle:nth-child(1) {
   border-width: 1px;
   
   }
+
+
 /* FOOTER */
 
-.footer{
-  text-align: center;
-  align-content: center;
-  background-color: #B2B2B2;
-  padding: 7px 15px;
-  color: white;
+footer {
+  align-items: center;
+  background-color: #e6dddf;
+  font-family: "Nova Mono", monospace;
+  
 }
 
+footer p {
+  color: white;
+  position: relative;
+  margin-bottom: 2%;
+  margin-left: 40%;
+}
+
+.social {
+  color: white;
+  margin-left: 35%;
+}
+
+.fa-brands,
+.fa-solid {
+  color: white;
+  margin: auto;
+  padding: 1%;
+  flex-direction: column;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+}
