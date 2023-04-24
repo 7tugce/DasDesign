@@ -1,7 +1,6 @@
-body{
-  background-color: #FAF6F6;
+body {
+  background-color: #faf6f6;
 }
-
 
 /* NAVBAR */
 
@@ -16,21 +15,40 @@ nav {
 
 /* CONTACT */
 
-.contactInfo{
+.contactInfo {
   margin-top: 30px;
 }
 
-
 /* FORM */
-form {
+
+@media screen and(max-width:768px) {
+  form {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 150px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-family: "Playfair Display", serif;
+  }
+
+ 
+}
+
+
+  form {
   float: right;
-  margin-right: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
   width: 350px;
   text-align: center;
-  margin-top: 7%;
+  margin-top: 5%;
   margin-bottom: 4%;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
+
+
+
 /* CONTACT BUTTON */
 .btn {
   line-height: 50px;
@@ -38,14 +56,14 @@ form {
   text-align: center;
   width: 250px;
   cursor: pointer;
-  background-color:#e6dddf; 
+  background-color: #e6dddf;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
   margin-bottom: 4%;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   color: black;
 }
 .btn-three {
@@ -68,11 +86,11 @@ form {
   color: black;
 }
 .btn-three:hover::before {
-  opacity: 0 ;
-  transform: scale(0.5,0.5);
+  opacity: 0;
+  transform: scale(0.5, 0.5);
 }
 .btn-three::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -81,27 +99,31 @@ form {
   z-index: 1;
   opacity: 0;
   transition: all 0.3s;
-  border: 1px solid rgba(255,255,255,0.5);
-  transform: scale(1.2,1.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
 }
 .btn-three:hover::after {
   opacity: 1;
-  transform: scale(1,1);
+  transform: scale(1, 1);
 }
-
 
 /* MAP */
 
 .map {
   margin: 7%;
 }
-embed, object, iframe{max-width: 100%;}
-h4{
-          text-align: center;
-          display: block;
-          margin: 50px;
-          font-family: 'Playfair Display', serif;
-}/* FOOTER */
+embed,
+object,
+iframe {
+  max-width: 100%;
+}
+h4 {
+  text-align: center;
+  display: block;
+  margin: 50px;
+  font-family: "Playfair Display", serif;
+} 
+/* FOOTER */
 
 footer {
   justify-content: center;
@@ -110,8 +132,7 @@ footer {
 }
 
 
-
-.social {
+  .social {
   color: white;
   margin-left: 45%;
 }
@@ -129,3 +150,8 @@ footer {
   color: white;
   text-decoration: none;
 }
+
+
+
+
+

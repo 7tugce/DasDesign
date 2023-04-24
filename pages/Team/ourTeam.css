@@ -1,60 +1,151 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-.top-title{
+.top-title {
   text-align: center;
   font-size: 50px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
+  margin-top: 43px;
 }
 
-/* .w-full , .top-title{
-   
+@media screen and (max-width: 768px) {
+  .top-title {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+  }
 }
 
 div.align-middle:nth-child(1) {
   align-self: center;
-  } */
-  nav{
-    --bs-navbar-padding-x: 0;
+}
+*/ nav {
+  --bs-navbar-padding-x: 0;
   font-size: 18px;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   border-bottom-style: solid;
   border-width: 1px;
-  
-  }
+}
+
+
+/* TEAM */
+
+
+body{
+  background-color: #faf6f6;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: "Poppins";
+}
+
+
+
+.container {
+margin-top: 32px;
+}
+
+
+.container .team {
+width: auto;
+display: flex;
+justify-content: center;
+text-align: center;
+flex-wrap: wrap;
+}
+
+.container .team .member {
+width: 400px;
+margin: 10px;
+background: #fff;
+border-radius: 6px;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+padding: 25px;
+}
+
+.container .team .member img {
+width: 100%;
+height: 350px;
+}
+
+
+@media screen and (max-width:768px) {
+  .container .team .member img {
+    width: 100%;
+    height: 270px;
+    }
+}
+
+.container .team .member h3 {
+color: #444;
+margin-top: 20px;
+}
+
+.container .team .member span {
+font-size: 12px;
+color: #999;
+}
+
+.container .team .member p ,ul,li {
+margin: 15px 0;
+font-weight: 400;
+color: #999;
+font-size: 15px;
+text-align: justify;
+}
+
+.container .team .member .btn a {
+background: #e6dddf;
+width: 125px;
+padding: 10px;
+border-radius: 6px;
+color: #444;
+text-transform: capitalize;
+transition: all 0.3s ease;
+margin-bottom: 0px;
+}
+
+.container .team .member .btn a:hover {
+background: #444;
+color: #fff;
+}
+
+
 
 
 /* FOOTER */
 
 footer {
-  align-items: center;
+  justify-content: center;
   background-color: #e6dddf;
   font-family: "Nova Mono", monospace;
-  
 }
 
-footer p {
-  color: white;
-  position: relative;
-  margin-bottom: 2%;
-  margin-left: 40%;
+@media screen and (max-width: 768px) {
+  .social {
+    color: white;
+    margin-left: auto;
+  }
 }
-
-.social {
-  color: white;
-  margin-left: 35%;
+@media screen and (min-width: 768px) {
+  .social {
+    color: white;
+    margin-left: 38%;
+  }
 }
 
 .fa-brands,
 .fa-solid {
   color: white;
-  margin: auto;
   padding: 1%;
   flex-direction: column;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .social a {

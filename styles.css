@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+label {
+  margin-top: 8px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+select {
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Dosis", sans-serif;
+}
+
 body {
   text-align: center;
   background-color: #faf6f6;
@@ -41,43 +54,73 @@ nav {
   border-bottom-style: solid;
   border-width: 1px;
 }
+@media screen and (min-width:768px) {
+  .navbar-nav{
+  margin-left: 700px;
+}
+.navbar-brand{
+  width: 100px;
+  height:80px;
+}
+}
+@media screen and (max-width:769px) {
+ nav{
+  height: 90px;
+ }
+ .navbar-brand img{
+  width: 70px;
+  height:60px;
+}
+}
 
 .navbar:hover,
 .navbar:active {
   background-color: white;
 }
-.nav-item{
+.nav-item {
   margin-left: 17px;
   margin-right: 20px;
 }
 
+.navButton {
+  line-height: 25px;
+  height: 25px;
+  text-align: center;
+  width: 50px;
+  cursor: pointer;
+  background-color: #e6dddf;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Dosis", sans-serif;
+  color: black;
+  margin: auto;
+  border-style: none;
+  border-radius: 10px;
+}
+
 /* CONTENT */
 
-/*WIDE SCREEN SUPPORT*/
 @media screen and (min-width: 769px) {
   .bgImg {
-    background-image: url(images/bg-foto.jpeg);
+    background-image: url(images/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
     padding-top: 66.64%;
-    /* (img-height / img-width * container-width) */
-    /* (853 / 1280 * 100) */
   }
 }
 
-/*MOBILE SUPPORT*/
 @media screen and (max-width: 768px) {
   .bgImg {
-    background: url(images/bg-foto.jpeg);
+    background: url(images/bg.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
     padding-top: 66.64%;
-    /* (img-height / img-width * container-width) */
-    /* (853 / 1280 * 100) */
   }
 
   .navbar-collapse {
@@ -112,7 +155,7 @@ nav {
 
 .vl {
   border-left: 3px solid #3c3c3c;
-  height: 190px;
+  height: 270px;
   position: absolute;
   margin-left: -80px;
 }
@@ -159,7 +202,9 @@ p {
   margin: 5%;
   background-color: #e6dddf;
 }
-
+.card h4 {
+  font-family: "Dosis", sans-serif;
+}
 .products h1 {
   margin-bottom: 20px;
   margin-top: 200px;
@@ -173,6 +218,7 @@ p {
     rgba(250, 246, 246, 1) 0%,
     rgba(230, 221, 223, 1) 100%
   );
+  margin: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -182,15 +228,20 @@ p {
   }
 
   .process h3 {
-    margin-left: 30px;
-    margin-top: 3%;
+    margin-top: 7%;
     text-align: start;
-    font-family: "Alkatra", cursive;
+    font-family: "Alkatra", "cursive";
+    display: inline;
   }
 
   .process p {
     text-align: start;
     margin: 30px;
+  }
+  .process h4 {
+    margin: 50px;
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
   }
 }
 
@@ -199,22 +250,25 @@ p {
     margin-bottom: -200px;
     margin-left: -600px;
   }
+  .productionIcons{
+    margin-bottom: -100px;
+    margin-left: -600px;
+  }
 
   .process {
     display: inline-block;
     text-align: inline-start;
-    margin: 90px;
+    margin: 80px;
+    align-items: first baseline;
   }
 
   .process h3 {
-    margin-top: 3%;
     text-align: start;
-    font-family: "Alkatra", cursive;
+    display: inline;
   }
 
   .process h4 {
     margin-bottom: 50px;
-    margin-top: 30px;
     font-size: 35px;
     font-family: "Playfair Display", serif;
   }
@@ -226,7 +280,12 @@ p {
 
   .process p {
     text-align: start;
-    margin-bottom: 30px;
+    width: 450px;
+  }
+
+  .number {
+    font-size: 40px;
+    font-family: "Alkatra", "cursive";
   }
 }
 

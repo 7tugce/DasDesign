@@ -1,5 +1,7 @@
 {
     "files.enableTrash": true,
     "editor.mouseWheelZoom": true,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "editor.fontSize": 15,
+    
 }
