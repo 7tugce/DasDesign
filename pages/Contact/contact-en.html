@@ -11,9 +11,12 @@
       type="image/x-icon"
       href="../../images/001-das-logo.favicon.ico"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Charm&family=Cinzel&family=Dosis&family=Fuzzy+Bubbles&family=Montserrat:wght@200;400&family=Nova+Mono&family=Playfair+Display&family=Qwigley&family=Raleway:ital@1&family=Red+Hat+Display&family=Sofia&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&family=Charm&family=Cinzel&family=Dosis&family=Fuzzy+Bubbles&family=Montserrat:wght@200;400&family=Nova+Mono&family=Playfair+Display&family=Qwigley&family=Raleway:ital@1&family=Red+Hat+Display&family=Sofia&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -41,99 +44,91 @@
     <!-- NAVBAR -->
 
     <nav class="navbar">
-      <a class="navbar-brand" href="../../index-en.html#ourTeam">
+      <a class="navbar-brand" href="../../index-en.html">
         <img
-          src="../../images/logo.png"
+          src="../../images/Logo-removebg-preview.png"
           alt="DAS Design logo"
-          width="80"
-          height="75"
+          width="210"
+          height="100"
           style="margin-left: 30px"
+          class="stretched-link"
         />
       </a>
     </nav>
-    <h4>How to contact us</h4>
-    <div class="form">
-    <form
-      id="form"
-      action="mailto:mail@dasinterior.com.tr"
-      method="POST"
-      enctype="text/plain"
-    >
-      <div class="mb-3">
-        <label class="input-group-text" id="name">Full Name</label>
-        <input
-          type="text"
-          id="nameInput"
-          name="name"
-          class="form-control"
-          required
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-default"
-          onkeypress="return validate(event)"
-        />
+
+    <div class="content">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.216585910683!2d27.27045407579595!3d37.36105177209256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be875476d4e349%3A0x3cd19ad6d080f787!2sDAS%20Interior%20Design!5e0!3m2!1sen!2str!4v1683714861419!5m2!1sen!2str"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
 
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="input-group-text"
-          >Phone</label
-        >
-        <input
-          type="tel"
-          class="form-control"
-          name="phone"
-          required
-          id="phone"
-          placeholder=""
-          onkeypress="return validate(event)"
-        />
-      </div>
+      <div class="formWrapper">
+        <hr />
+        <hr class="verticalLine" />
+        <h2>Contact Us</h2>
+        <div class="fullForm">
+          <div class="form">
+            <form
+              id="form"
+              action="mailto:mail@dasinterior.com.tr"
+              method="POST"
+              enctype="text/plain"
+            >
+              <label id="name">Fullname</label>
+              <input
+                type="text"
+                id="nameInput"
+                name="name"
+                required
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                onkeypress="return validate(event)"
+              />
+              <label for="exampleFormControlInput1">Phone</label>
+              <input
+                type="tel"
+                name="phone"
+                required
+                id="phone"
+                placeholder=""
+                onkeypress="return validate(event)"
+              />
+              <label for="exampleFormControlInput1">E-mail</label>
+              <input type="email" name="mail" required id="mail" />
+              <label for="exampleFormControlTextarea1">Want To Add</label>
+              <input
+                name="message"
+                id="textArea"
+                rows="3"
+                onkeypress="return validate(event)"
+              />
+              <div class="buttonAndIcons">
+                <button
+                  type="submit"
+                  class="btn btn-three"
+                  id="submit"
+                  value="send"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
 
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="input-group-text"
-          >Email Address</label
-        >
-        <input
-          type="email"
-          name="mail"
-          class="form-control"
-          required
-          id="mail"
-          placeholder="someone@example.com"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          >Want to add</label
-        >
-        <textarea
-          class="form-control"
-          name="message"
-          id="textArea"
-          rows="3"
-          onkeypress="return validate(event)"
-        ></textarea>
-      </div>
-      <button type="submit" class="btn btn-three" id="submit" value="send">
-        Send
-      </button>
-    </form>
-  </div>
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1729.1237096751902!2d27.271909613187322!3d37.36081004916579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be8733dbf3a7cf%3A0x26de958f7a2d133!2sFidan%20Fashion!5e0!3m2!1str!2str!4v1679993005965!5m2!1str!2str"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-
-      <div class="contactInfo">
-        <p>
-          Phone : +90 541 813 46 89 <br />
-          E-mail : mail@dasinterior.com.tr
-        </p>
+          <div class="contactInfo">
+            <h3>Phone</h3>
+            <p>+90 541 813 46 89 <br /></p>
+            <h3>E-Mail</h3>
+            <p>mail@dasinterior.com.tr</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -144,7 +139,7 @@
   <footer class="footer" id="footer">
     <div class="social">
       <a target="_blank" href=""><i class="fa-brands fa-youtube"></i></a>
-      <a target="_blank" href="https://www.instagram.com/das.interiordesign/"
+      <a target="_blank" href="https://www.instagram.com/das.interiordesigns/"
         ><i class="fa-brands fa-instagram"></i
       ></a>
       <a
@@ -152,7 +147,7 @@
         href="https://www.facebook.com/people/dasinteriordesign/100090557134092/?mibextid=LQQJ4d"
         ><i class="fa-brands fa-facebook"></i
       ></a>
-      <a target="_blank" href=""><i class="fa-brands fa-pinterest"></i></a>
+      <a target="_blank" href="https://tr.pinterest.com/dasinteriordesigns/"><i class="fa-brands fa-pinterest"></i></a>
     </div>
   </footer>
 </html>

@@ -17,7 +17,8 @@ select {
 
 body {
   text-align: center;
-  background-color: #faf6f6;
+
+  background-color: #f1edea;
 
   /* font-family: 'Charm', cursive;
 font-family: 'Cinzel', serif;F1DEC9
@@ -49,34 +50,24 @@ font-family: 'Tangerine', cursive;
 
 nav {
   --bs-navbar-padding-x: 0;
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Dosis", sans-serif;
   border-bottom-style: solid;
   border-width: 1px;
 }
-@media screen and (min-width:768px) {
-  .navbar-nav{
-  margin-left: 700px;
+.navbar-nav {
+  margin-left: auto;
 }
-.navbar-brand{
-  width: 100px;
-  height:80px;
-}
-}
-@media screen and (max-width:769px) {
- nav{
-  height: 90px;
- }
- .navbar-brand img{
-  width: 70px;
-  height:60px;
-}
+
+.navbar-brand {
+  margin-right: auto;
 }
 
 .navbar:hover,
 .navbar:active {
   background-color: white;
 }
+
 .nav-item {
   margin-left: 17px;
   margin-right: 20px;
@@ -88,7 +79,7 @@ nav {
   text-align: center;
   width: 50px;
   cursor: pointer;
-  background-color: #e6dddf;
+  background-color: #b7b7b7;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -102,25 +93,25 @@ nav {
 
 /* CONTENT */
 
+.backgroundPhoto {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 769px) {
-  .bgImg {
-    background-image: url(images/bg.png);
+  .bgImg img {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 0;
-    padding-top: 66.64%;
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .bgImg {
-    background: url(images/bg.png);
+  .bgImg img {
+    margin-top: 127px;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 0;
-    padding-top: 66.64%;
   }
 
   .navbar-collapse {
@@ -128,29 +119,22 @@ nav {
   }
 }
 
-.bgImg p {
-  text-align: center;
-  vertical-align: center;
-  margin: auto;
-  z-index: -1;
-}
-
 @media screen and (max-width: 768px) {
-  .content {
+  .descriptionContent {
     font-family: "Playfair Display", serif;
     word-spacing: 0px;
-    margin-left: -38px;
-    width: 80vw;
+    margin: auto;
+    width: 98%;
   }
 }
 
 .middle-container {
   vertical-align: center;
   height: 60%;
-  width: 60%;
+  width: 70%;
   margin: auto;
-  margin-top: 80px;
   margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .vl {
@@ -172,12 +156,21 @@ a i {
 a:hover {
   color: #8d7b68;
 }
-
-h1 {
-  text-align: center;
-  display: block;
-  margin: 50px;
-  font-family: "Playfair Display", serif;
+@media screen and (max-width: 767px) {
+  h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: "Dosis", sans-serif;
+  }
+}
+@media screen and (min-width: 767px) {
+  h1 {
+    text-align: center;
+    display: block;
+    font-family: "Dosis", sans-serif;
+    font-size: 100px;
+    margin-bottom: 80px;
+  }
 }
 
 p {
@@ -189,120 +182,348 @@ p {
   font-family: "Cinzel", serif;
 }
 
-.content {
-  text-align: justify;
-  font-family: "Playfair Display", serif;
+.descriptionContent {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
   word-spacing: 0px;
   font-size: 18px;
-  margin-top: 30px;
+}
+/* PRODUCTS */
+.cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.cards h2.header {
+  font-size: 40px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Dosis", sans-serif;
+}
+.services {
+  display: flex;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #b7b7b7;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.content .fab {
+  font-size: 70px;
+  margin: 16px 0;
+}
+.content > * {
+  flex: 1 1 100%;
+}
+.content:hover {
+  color: black;
 }
 
+.content-1:hover {
+  border-color: #d9d0c7;
+  background: #d9d0c7;
+}
+
+.content-2:hover {
+  border-color: #d9d0c7;
+  background: #d9d0c7;
+}
+
+.content-3:hover {
+  border-color: #d9d0c7;
+  background: #d9d0c7;
+}
+
+.content h2 {
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content p {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+.content a {
+  margin: 22px 0;
+  background: #2c3639;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #2c3639;
+  padding: 15px 0;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.content a:hover {
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .card {
   display: inline-block;
   margin: 5%;
-  background-color: #e6dddf;
+  height: 450px;
+  width: 300px;
+}
+
+.card img {
+  width: 300px;
+  height: 350px;
 }
 .card h4 {
   font-family: "Dosis", sans-serif;
 }
-.products h1 {
-  margin-bottom: 20px;
-  margin-top: 200px;
+
+#aboutUs {
+  height: 150px;
+}
+#products {
+  height: 150px;
+}
+@media screen and(min-width:768px) {
+  .products h1 {
+    margin-bottom: 20px;
+    margin-top: 200px;
+    font-size: 100px;
+    font-family: "Dosis", sans-serif;
+  }
+
+  .middle-container {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: "Dosis", sans-serif;
+  }
+  #products {
+    height: 60px;
+  }
+  #aboutUs {
+    height: 60px;
+  }
 }
 
 /* PROCESS */
+
+.icons img {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 0;
+}
 #process {
-  background: rgb(250, 246, 246);
-  background: linear-gradient(
-    171deg,
-    rgba(250, 246, 246, 1) 0%,
-    rgba(230, 221, 223, 1) 100%
-  );
   margin: 30px;
+  background-image: url(images/p4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.sectionHeading {
+  display: column;
+  justify-content: center;
+  font-family: "Dosis", sans-serif;
+}
+
+#design .process {
+  margin: 22px;
+  margin-top: 40px;
+}
+h4 {
+  margin-bottom: 35px;
+  font-family: "Dosis", sans-serif;
+}
 @media screen and (max-width: 768px) {
-  .icons {
-    margin-top: 20px;
-    margin-bottom: 30px;
+  .sectionHeading {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #644737;
+    text-align: center;
+  }
+  .sectionHeading h3 {
+    display: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 35px;
+    font-family: "Moon Dance", cursive;
+    text-align: center;
+    margin-top: 28px;
   }
 
+  #production .sectionHeading h3 {
+    display: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 35px;
+    font-family: "Moon Dance", cursive;
+    text-align: center;
+    margin-top: 28px;
+  }
+  #design .sectionHeading h3 {
+    display: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 35px;
+    font-family: "Moon Dance", cursive;
+    text-align: center;
+    margin-top: 28px;
+  }
   .process h3 {
     margin-top: 7%;
     text-align: start;
-    font-family: "Alkatra", "cursive";
     display: inline;
   }
 
   .process p {
-    text-align: start;
+    text-align: center;
     margin: 30px;
+    color: #7c5536;
+    font-family: "Montserrat", sans-serif;
   }
   .process h4 {
-    margin: 50px;
+    margin: 35px;
     font-size: 35px;
-    font-family: "Playfair Display", serif;
+    font-family: "Dosis", sans-serif;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .icons {
-    margin-bottom: -200px;
-    margin-left: -600px;
+  #design {
+    width: 100%;
   }
-  .productionIcons{
-    margin-bottom: -100px;
-    margin-left: -600px;
+
+  #production {
+    width: 100%;
   }
 
   .process {
     display: inline-block;
-    text-align: inline-start;
+    text-align: center;
     margin: 80px;
     align-items: first baseline;
   }
 
-  .process h3 {
+  h3 {
     text-align: start;
     display: inline;
   }
+  .sectionHeading {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #644737;
+    text-align: center;
+  }
 
-  .process h4 {
-    margin-bottom: 50px;
+  .sectionHeading h3 {
+    display: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     font-size: 35px;
-    font-family: "Playfair Display", serif;
+    font-family: "Moon Dance", cursive;
+    text-align: center;
+    margin-top: 28px;
+  }
+  .substance3 {
+    margin-top: 30px;
+    justify-content: center;
+    font-family: "Moon Dance", cursive;
+  }
+  .process h4 {
+    margin-bottom: 35px;
+
+    margin-top: 70px;
+    font-size: 75px;
+    font-family: "Dosis", sans-serif;
   }
 
   hr {
-    width: 400px;
+    width: 350px;
     border-top: 2px solid;
   }
 
   .process p {
-    text-align: start;
-    width: 450px;
+    text-align: center;
+    width: 350px;
+    color: #7c5536;
+
+    font-family: "Montserrat", sans-serif;
   }
 
   .number {
     font-size: 40px;
     font-family: "Alkatra", "cursive";
   }
+
+  #design .process {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+#design h4 {
+  margin-bottom: 35px;
+  font-family: "Dosis", sans-serif;
+}
+#production h4 {
+  margin-bottom: 35px;
+  font-family: "Dosis", sans-serif;
+}
+
+#production .process {
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 /* PHOTO CARDS */
 
-.team-picture {
-  margin-bottom: 4%;
-  border-radius: 30px;
-  align-self: center;
-  width: 50%;
+@media screen and(min-width:768px) {
+  .ourTeam h1 {
+    margin-bottom: -30px;
+    margin-top: 200px;
+    font-size: 100px;
+    font-family: "Dosis", sans-serif;
+  }
 }
 
-.video {
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  position: relative;
+@media screen and (max-width: 767px) {
+  .ourTeam h1 {
+    margin-bottom: 20px;
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: "Dosis", sans-serif;
+  }
+}
+
+.team-picture {
+  align-self: center;
+  border-radius: 30px;
+  margin-bottom: 4%;
+  width: 50%;
 }
 
 /* CONTACT BUTTON */
@@ -312,7 +533,7 @@ p {
   text-align: center;
   width: 250px;
   cursor: pointer;
-  background-color: #e6dddf;
+  background-color: #3f4e4f;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -320,11 +541,11 @@ p {
   margin: auto;
   margin-bottom: 4%;
   font-family: "Dosis", sans-serif;
-  color: black;
+  color: white;
 }
 
 .btn-three {
-  color: black;
+  color: white;
   transition: all 0.5s;
   position: relative;
   height: 33.33%;
@@ -339,9 +560,9 @@ p {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: #e6dddf;
+  background-color: #3f4e4f;
   transition: all 0.3s;
-  color: black;
+  color: white;
 }
 
 .btn-three:hover::before {
@@ -372,7 +593,7 @@ p {
 
 footer {
   justify-content: center;
-  background-color: #e6dddf;
+  background-color: #b7b7b7;
   padding: 7px 15px;
   font-family: "Nova Mono", monospace;
 }

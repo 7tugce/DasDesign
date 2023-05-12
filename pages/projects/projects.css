@@ -1,0 +1,51 @@
+html,
+body,
+h1,
+h2,
+section,
+div {
+  font-size: 22px;
+  font-family: "Dosis", sans-serif;
+}
+h2 {
+  margin: auto;
+  text-align: center;
+  font-size: 28px;
+}
+.card {
+  margin: 3rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #b7b7b7;
+  font-family: "Nova Mono", monospace;
+}
+
+.social {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.social a {
+  margin: 0 1rem;
+}
+
+.fa-brands,
+.fa-solid {
+  color: white;
+  padding: 1%;
+  flex-direction: column;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+}
