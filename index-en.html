@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keyword" content="Interior Design Didim House" />
-
+<meta name="description" content="We are a company that performs renovation, home renovation, interior design, kitchen and bathroom production and application works in Didim, Akbük, Kuşadası and Bodrum regions. We design, manufacture and implement hotels, restaurants, cafes and offices.">
   <meta property="og:type" content="website" data-react-helmet="true" />
   <meta property="og:description"
     content="We are a company that performs renovation, home renovation, interior design, kitchen and bathroom production and application works in Didim, Akbük, Kuşadası and Bodrum regions. We design, manufacture and implement hotels, restaurants, cafes and offices. " />
@@ -66,15 +66,13 @@
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#navbar">
+      <a class="navbar-brand" href="index.html">
         <img src="images/Logo-removebg-preview.png" alt="DAS Design logo" width="210" height="100"
           class="stretched-link" />
       </a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutUs">Who Are We</a>
-          </li>
+        
           <li class="nav-item">
             <a class="nav-link" href="#products">Our Products</a>
           </li>
@@ -95,7 +93,7 @@
 
   <!-- BACKGROUND PHOTO -->
 
-  <div id="navbar" class="bgImg">
+  <div class="bgImg">
     <img src="images/bg-en.jpeg" style="width: 100%" alt="background photo" />
   </div>
   <div id="aboutUs" ></div>
@@ -120,7 +118,8 @@
     <img src="images/9.png" style="width: 90%" alt="background photo" />
   </div>
   <!-- PRODUCTS -->
-  <div id="products" style="height: 40px;"></div>
+  <div id="products"></div>
+  <div style="height: 40px;"></div>
   <div class="products">
     <div class="line">
       <hr style="width: 100%; color: black; margin-bottom: 0%" />
@@ -166,7 +165,9 @@
     </div>
     <!-- PROCESS -->
     <!--  Navbardan linkle geldiğinde başlık görünsün diye -->
-    <div id="process1" style="height: 20px;"></div>
+    <div id="process1" style="height: 60px"></div>
+    <div></div>
+     <div style="height: 30px"></div>
 
     <div id="process" class="process">
       <div id="design">
@@ -377,7 +378,7 @@
         });
       } else if (window.outerWidth < 768) {
         window.addEventListener("scroll", function () {
-          if (window.pageYOffset > 200) {
+          if (window.pageYOffset > 90) {
             nav.classList.add("bg-light", "shadow");
           } else {
             nav.classList.remove("bg-light", "shadow");

@@ -290,9 +290,9 @@ p {
 #aboutUs {
   height: 150px;
 }
-#products {
+/* #products {
   height: 150px;
-}
+} */
 @media screen and(min-width:768px) {
   .products h1 {
     margin-bottom: 20px;
@@ -501,23 +501,23 @@ h4 {
 
 /* PHOTO CARDS */
 
-@media screen and(min-width:768px) {
-  .ourTeam h1 {
-    margin-bottom: -30px;
-    margin-top: 200px;
-    font-size: 100px;
+@media screen and (min-width: 768px) {
+  .ourTeam h2 {
+    margin-top: 100px;
+    font-size: 75px;
     font-family: "Dosis", sans-serif;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .ourTeam h1 {
+  .ourTeam h2 {
     margin-bottom: 20px;
     margin-top: 60px;
-    font-size: 40px;
+    font-size: 50px;
     font-family: "Dosis", sans-serif;
   }
 }
+
 
 .team-picture {
   align-self: center;

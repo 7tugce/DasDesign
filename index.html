@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keyword" content="Tadilat Didim Ev Yenileme  İç Mimari" />
+    <meta
+      name="description"
+      content="Didim, Akbük, Kuşadası, Bodrum bölgelerinde tadilat, ev yenileme, iç mimari tasarım, mutfak ve banyo üretim ve uygulama işleri yapan bir firmayız. Otel, restoran, cafe ve ofis tasarımı, üretimi ve uygulaması yapıyoruz."
+    />
 
     <meta property="og:type" content="website" data-react-helmet="true" />
     <meta
@@ -13,6 +17,7 @@
     />
     <meta property="og:title" content="DAS Design |Interior Design Didim" />
     <title>DAS Design | Interior Design</title>
+    <link rel="cannonical" href="https://dasinterior.com.tr/">
     <link
       rel="icon"
       type="image/x-icon"
@@ -105,7 +110,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#navbar">
+        <a class="navbar-brand" href="index.html">
           <img
             src="images/Logo-removebg-preview.png"
             alt="DAS Design logo"
@@ -122,19 +127,10 @@
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#aboutUs"
-                >Biz Kimiz</a
-              >
+              <a class="nav-link" href="#products">Hizmetler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#products"
-                >Hizmetler</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#process1"
-                >Süreç Aşamaları</a
-              >
+              <a class="nav-link" href="#process1">Süreç Aşamaları</a>
             </li>
 
             <li class="nav-item">
@@ -150,7 +146,7 @@
 
     <!-- BACKGROUND PHOTO -->
 
-    <div id="navbar" class="bgImg">
+    <div class="bgImg">
       <img src="images/bg1.png" style="width: 100%" alt="background photo" />
     </div>
 
@@ -185,7 +181,8 @@
     </div>
 
     <!-- PRODUCTS -->
-    <div id="products" ></div>
+    <div id="products"></div>
+    <div style="height: 40px;"></div>
     <div class="products">
       <div class="line">
         <hr style="width: 100%; color: black; margin-bottom: 0%" />
@@ -236,7 +233,9 @@
 
       <!-- PROCESS -->
       <!--  Navbardan linkle geldiğinde başlık görünsün diye -->
-      <div id="process1" style="height: 30px"></div>
+     <div id="process1" style="height: 60px"></div>
+     <div></div>
+      <div style="height: 30px"></div>
 
       <div id="process" class="process">
         <div id="design">
@@ -414,7 +413,7 @@
     </div>
     <!-- TEAM CARD -->
     <div class="ourTeam">
-      <h1>Ekibimiz</h1>
+      <h2>Ekibimiz</h2>
 
       <a href="pages/Team/ourTeam.html"
         ><img
@@ -450,7 +449,7 @@
         });
       } else if (window.outerWidth < 768) {
         window.addEventListener("scroll", function () {
-          if (window.pageYOffset > 100) {
+          if (window.pageYOffset > 90) {
             nav.classList.add("bg-light", "shadow");
           } else {
             nav.classList.remove("bg-light", "shadow");
@@ -459,17 +458,19 @@
       }
     </script>
 
-<script type="text/javascript">
-  $(function () {
-      $(document).click(function (event) {
+    <script type="text/javascript">
+      $(function () {
+        $(document).click(function (event) {
           var clickover = $(event.target);
-          var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
+          var _opened = $(".navbar-collapse").hasClass(
+            "navbar-collapse collapse show"
+          );
           if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-              $("button.navbar-toggler").click();
+            $("button.navbar-toggler").click();
           }
+        });
       });
-  });
-</script>
+    </script>
   </body>
 
   <!-- FOOTER -->
